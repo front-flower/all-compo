@@ -1,16 +1,40 @@
 <template>
 <div>
-  <full-calendar/>
+  <Map></Map>
 </div>
 </template>
 
 <script>
-import FullCalendar from './components/FullCalandar.vue'
+import Map from './components/Map.vue'
 
 export default {
   name: 'App',
   components: {
-    FullCalendar
+    Map
+  },
+  data () {
+    return {
+      data: []
+    }
+  },
+  created() {
+    // this.data = [
+    //   {
+    //       title: '월급날',
+    //       date: '2022-05-15',
+    //       color: 'blue'
+    //   },
+    //   {
+    //       title: '생일',
+    //       date: '2022-05-25',
+    //       color: 'green'
+    //   },
+    //   {
+    //     title: '여름 휴가',
+    //     date: '2022-05-01~2022-05-06',
+    //     color: 'yellow'
+    //   }
+    // ]
   }
 }
 </script>
